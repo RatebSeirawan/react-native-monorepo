@@ -1,0 +1,7 @@
+{
+    "name": "theme",
+    "version": "0.1.0",
+    "private": false,
+    "main": "src/index.js"
+  }
+  

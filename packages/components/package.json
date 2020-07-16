@@ -1,0 +1,10 @@
+{
+    "name": "components",
+    "version": "0.1.0",
+    "private": false,
+    "main": "src/index.js",
+    "dependencies": {
+        "theme": "0.1.0"
+    }
+  }
+  

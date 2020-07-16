@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -19,12 +11,13 @@ import {
 import {
   Header,
   LearnMoreLinks,
-  Colors,
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+import {colors} from 'theme';
+
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -74,14 +67,14 @@ const App: () => React$Node = () => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: colors.background,
   },
   engine: {
     position: 'absolute',
     right: 0,
   },
   body: {
-    backgroundColor: Colors.white,
+    backgroundColor: colors.background,
   },
   sectionContainer: {
     marginTop: 32,
@@ -90,19 +83,20 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: Colors.black,
+    color: colors.black,
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: Colors.dark,
+    color: colors.black,
   },
   highlight: {
     fontWeight: '700',
+    color: colors.primary,
   },
   footer: {
-    color: Colors.dark,
+    color: colors.black,
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
